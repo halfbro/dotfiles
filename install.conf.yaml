@@ -1,0 +1,32 @@
+- defaults:
+    link:
+        relink: true
+        create: true
+- link:
+    ~/.zshrc:
+        force: true
+        path: zshrc
+    ~/.Xresources:
+        path: Xresources
+    ~/.config/compton.conf:
+        path: compton.conf
+    ~/.config/i3/config:
+        path: i3_config
+    ~/.config/i3/i3-exit.py:
+        path: i3_exit.py
+    ~/.config/i3/wallpaper.jpg:
+        path: wallpapers/wallpaper1920x1080
+    ~/.config/i3status/config:
+        path: i3_status_config
+    ~/.config/i3status/cmus_module.py:
+        path: cmus_pystatus/cmus_module.py
+    ~/.config/nvim/init.vim:
+        path: nvim_init.vim
+    ~/.config/nvim/autoload/plug.vim:
+        path: nvim_plug.vim
+    ~/.config/dunst/dunstrc:
+        path: dunstrc
+
+- clean: ['~']
+- shell:
+    - mkdir -p ~/Documents

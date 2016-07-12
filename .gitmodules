@@ -1,3 +1,6 @@
 [submodule "dotbot"]
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
+[submodule "cmus_pystatus"]
+	path = cmus_pystatus
+	url = https://github.com/halfbro/cmus_pystatus
