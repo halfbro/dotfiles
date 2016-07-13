@@ -10,6 +10,7 @@ bindkey -v
 zstyle :compinstall filename '/home/matt/.zshrc'
 
 autoload -Uz compinit
+autoload -U history-search-end
 compinit
 # End of lines added by compinstall
 
@@ -25,6 +26,9 @@ bindkey -v
 # Also add the history-search-end function
 zle -N history-beginning-search-backward-end history-search-end
 zle -N history-beginning-search-forward-end history-search-end
+
+bindkey "^[[A" history-beginning-search-backward-end
+bindkey "^[[B" history-beginning-search-forward-end
 
 # Match files from both ends
 setopt completeinword
