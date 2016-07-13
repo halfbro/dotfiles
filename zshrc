@@ -43,6 +43,7 @@ PROMPT="%n@%~ > "
 alias vim=nvim
 alias XResUpdate="xrdb -merge ~/.Xresources"
 alias ls="ls --color=always"
+alias "zathuralast"='zathura /home/matt/Downloads/"$(ls -lt /home/matt/Downloads | head -n 2 | tail -c +62)"'
 
 # alias tis100="~/GOG\ Games/TIS\ 100/start.sh"
 alias Parkitect="~/Parkitect/Parkitect.x86_64"
