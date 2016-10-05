@@ -34,9 +34,9 @@ Plug 'pangloss/vim-javascript'
 
 " Formatting stuff
 	set autoindent " Keep indentation when making a new line in unrecognized languages
-	set noexpandtab
-	set shiftwidth=4
-	set tabstop=4
+	set expandtab
+	set shiftwidth=2
+	set tabstop=2
 	set nowrap " Don't wrap text, just trail the line off
 
 " Searching stuff

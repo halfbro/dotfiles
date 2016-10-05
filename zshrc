@@ -18,6 +18,7 @@ compinit
 export EDITOR=nvim
 PATH=$PATH:/home/matt/.gem/ruby/2.3.0/bin
 export PATH
+export XDG_CONFIG_HOME=/home/matt/.config
 
 # Use vim style keybinds by default
 bindkey -v
@@ -53,6 +54,8 @@ zle -N insert-sudo insert_sudo
 bindkey "^[s" insert-sudo
 
 bindkey "^?" backward-delete-char
+
+alias eve="WINEARCH=win32 WINEPREFIX=~/Wine/eve32 wine ~/Wine/eve32/dosdevices/c:/EVE/Launcher/evelauncher.exe"
 
 transfer() { if [ $# -eq 0 ]; then echo "No arguments specified. Usage:\necho transfer /tmp/test.md\ncat /tmp/test.md | transfer test.md"; return 1; fi 
 tmpfile=$( mktemp -t transferXXX ); if tty -s; then basefile=$(basename "$1" | sed -e 's/[^a-zA-Z0-9._-]/-/g'); curl --progress-bar --upload-file "$1" "https://transfer.sh/$basefile" >> $tmpfile; else curl --progress-bar --upload-file "-" "https://transfer.sh/$1" >> $tmpfile ; fi; cat $tmpfile; rm -f $tmpfile; }; alias transfer=transfer
