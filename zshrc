@@ -19,6 +19,7 @@ export EDITOR=nvim
 PATH=$PATH:/home/matt/.gem/ruby/2.3.0/bin
 export PATH
 export XDG_CONFIG_HOME=/home/matt/.config
+export STEAM_FRAME_FORCE_CLOSE=1
 
 # Use vim style keybinds by default
 bindkey -v

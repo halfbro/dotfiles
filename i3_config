@@ -229,6 +229,10 @@ bar {
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+
 bindsym XF86AudioLowerVolume exec amixer -q set Master 5%-
 bindsym XF86AudioMute exec amixer -q set Master toggle
+bindsym XF86AudioNext exec cmus-remote -n
+bindsym XF86AudioPrev exec cmus-remote -r
+bindsym XF86AudioPause exec cmus-remote -u
+bindsym XF86AudioStop exec cmus-remote -s
 
 bindsym F10 exec --no-startup-id xwd -root -out screenshot.xwd
 
@@ -245,4 +249,4 @@ smart_gaps on
 smart_borders on
 
 # Enable compton compositor for nice shading and transparency
-exec compton --config ~/.config/compton.conf -b
+#exec compton --config ~/.config/compton.conf -b
