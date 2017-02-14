@@ -7,31 +7,31 @@ general {
 	color_bad = "#FA001D"
 }
 
-order += "cmus_module"
-order += "volume_status master"
+#order += "cmus_module"
+#order += "volume_status master"
 order += "disk /"
 order += "disk /home"
 order += "wireless wlp9s0"
 order += "tztime local"
 
-cmus_module {
-	cache_timeout = 1
-	error_text = ""
-}
+#cmus_module {
+#	cache_timeout = 1
+#	error_text = ""
+#}
 
-volume_status master {
-	cache_timeout = 1
-	format = "♬: {percentage}%"
-	format_muted = "♬: {percentage}% muted"
-	device = "default"
-	mixer = "Master"
-	mixer_idx = 0
-	on_click 1 = "exec i3-sensible-terminal -e alsamixer"
-	on_click 2 = "exec amixer set Master toggle"
-	on_click 3 = "exec killall alsamixer"
-	on_click 4 = "exec amixer set Master 2+"
-	on_click 5 = "exec amixer set Master 2-"
-}
+#volume_status master {
+#	cache_timeout = 1
+#	format = "♬: {percentage}%"
+#	format_muted = "♬: {percentage}% muted"
+#	device = "default"
+#	mixer = "Master"
+#	mixer_idx = 0
+#	on_click 1 = "exec i3-sensible-terminal -e alsamixer"
+#	on_click 2 = "exec amixer set Master toggle"
+#	on_click 3 = "exec killall alsamixer"
+#	on_click 4 = "exec amixer set Master 2+"
+#	on_click 5 = "exec amixer set Master 2-"
+#}
 
 disk "/home" {
 	format = "~: %free"

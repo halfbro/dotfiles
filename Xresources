@@ -28,7 +28,7 @@ URxvt.color9: #F73E3E
 URxvt.color10: #9BF73E
 URxvt.color11: #F7DC3E
 URxvt.color12: #40B1F7
-URxvt.color13: #CA40F7
+URxvt.color13: #DA69FF
 URxvt.color14: #40F7B1
 URxvt.color15: #FFFFFF
 
@@ -85,9 +85,9 @@ URxvt.troughColor: #2A2A2A
 
 ! Select the fonts to be used. This is a comma separated list of font names that are
 ! URxvt.font: xft:IEC symbols Unicode:pixelsize=14
-URxvt.font: xft:Terminus:pixelsize=14:antialias=false
+URxvt.font: xft:xos4 Terminus:pixelsize=14:antialias=false
 
-URxvt.boldFont: xft:Terminus:style=bold
+URxvt.boldFont: xft:xos4 Terminus:style=bold
 ! URxvt*italicFont: fontlist
 
 ! The font list to use for displaying bold, italic or bold italic characters,
