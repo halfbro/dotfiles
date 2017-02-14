@@ -62,7 +62,7 @@ font-2 = Wuncon Siji:size=10
 
 modules-left = i3
 modules-center = 
-modules-right = checkupdates volume filesystem memory cpu wlan eth temperature date
+modules-right = checkupdates volume filesystem memory cpu wlan eth temperature battery date
 
 tray-position = right
 tray-padding = 2
@@ -72,13 +72,9 @@ tray-padding = 2
 scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
 
-[bar/left]
+[bar/main]
 inherit = bar/base
-monitor = DVI-D-0
-
-[bar/right]
-inherit = bar/base
-monitor = DVI-I-1
+monitor = LVDS-0
 
 [module/xwindow]
 type = internal/xwindow
@@ -202,7 +198,7 @@ label = %percentage_used%%
 
 [module/wlan]
 type = internal/network
-interface = wlp9s0
+interface = wlo1
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
@@ -282,26 +278,29 @@ type = internal/battery
 battery = BAT0
 adapter = ADP1
 full-at = 98
+time-format = %H:%M
 
+label-charging = CHRG %percentage%%
 format-charging = <animation-charging> <label-charging>
-format-charging-underline = #ffb52a
+format-charging-underline = ${colors.light-yellow}
 
+label-discharging = %time% %percentage%%
 format-discharging = <ramp-capacity> <label-discharging>
 format-discharging-underline = ${self.format-charging-underline}
 
 format-full-prefix = " "
-format-full-prefix-foreground = ${colors.foreground-alt}
+format-full-prefix-foreground = ${colors.foreground}
 format-full-underline = ${self.format-charging-underline}
 
 ramp-capacity-0 = 
 ramp-capacity-1 = 
 ramp-capacity-2 = 
-ramp-capacity-foreground = ${colors.foreground-alt}
+ramp-capacity-foreground = ${colors.foreground}
 
 animation-charging-0 = 
 animation-charging-1 = 
 animation-charging-2 = 
-animation-charging-foreground = ${colors.foreground-alt}
+animation-charging-foreground = ${colors.foreground}
 animation-charging-framerate = 750
 
 [module/temperature]

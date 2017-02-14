@@ -1,10 +1,10 @@
-exec --no-startup-id feh --bg-scale '/home/matt/.config/i3/wallpaper.jpg'
+exec_always --no-startup-id feh --bg-scale '/home/matt/.config/i3/wallpaper.jpg'
 exec --no-startup-id xrdb -merge ~/.Xresources
 exec --no-startup-id dunst -config ~/.config/dunst/dunstrc
 exec --no-startup-id steam -silent %U
 exec --no-startup-id slack
 exec --no-startup-id claws-mail
-exec --no-startup-id ckb
+# exec --no-startup-id ckb
 
 exec_always --no-startup-id nm-applet
 exec_always --no-startup-id ~/.config/polybar/start
@@ -236,4 +236,4 @@ smart_borders on
 
 # Enable compton compositor for nice shading and transparency
 exec_always compton --config ~/.config/compton.conf -b
-exec xwinwrap -ov -fs -- mplayer -wid WID ~/summerprismsunset_720p_mpg.mpg -nosound -loop 0 -noconsolecontrols -x 3840 -y 1080
+# exec xwinwrap -ov -fs -- mplayer -wid WID ~/summerprismsunset_720p_mpg.mpg -nosound -loop 0 -noconsolecontrols -x 3840 -y 1080

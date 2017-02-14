@@ -17,7 +17,7 @@ compinit
 # Use neovim as editor of choice
 export EDITOR=nvim
 PATH=$PATH:/home/matt/.gem/ruby/2.3.0/bin
-PATH=$PATH:/home/matt/Documents/Omnet++/omnetpp-5.0/bin
+PATH=$PATH:/home/matt/Documents/OmNet++/omnetpp-5.0/bin
 export PATH
 export XDG_CONFIG_HOME=/home/matt/.config
 export STEAM_FRAME_FORCE_CLOSE=1
