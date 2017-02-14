@@ -16,6 +16,12 @@
         path: i3_exit.py
     ~/.config/polybar/config:
         path: polybar_config
+    ~/.config/polybar/check_updates.sh:
+        path: polybar_check_updates
+    ~/.config/polybar/display_updates.sh:
+        path: polybar_display_updates
+    ~/.config/polybar/start:
+        path: polybar_start
     ~/.config/nvim/init.vim:
         path: nvim_init.vim
     ~/.config/nvim/autoload/plug.vim:
