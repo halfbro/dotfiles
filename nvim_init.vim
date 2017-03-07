@@ -1,7 +1,7 @@
 " Use vim-plug to manage plugins easily
 call plug#begin('~/.config/nvim/plugged')
 
-" Plugins
+"rPlugins
 Plug 'scrooloose/nerdtree' " File browser for projects in tree-form
 	map <silent> <C-n> :NERDTreeToggle<CR> " Map Ctrl-n to toggle NERDTree
 
@@ -26,11 +26,17 @@ Plug 'pangloss/vim-javascript'
 	filetype plugin on
 	set hidden " Allows use of unsaved buffers basically
 	set history=100
+  let mapleader = " "
 
 	set number
 	set relativenumber
 
 	map <leader>rr :source ~/.config/nvim/init.vim<cr>
+
+" Buffer manipulation
+  map <leader>b :buffers<cr>
+  map <leader>l :bnext<cr>
+  map <leader>h :bprev<cr>
 
 	set backspace=indent,eol,start " Backspace over indents, eol, and over the start of inserts (places before the insert start)
 

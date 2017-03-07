@@ -1,5 +1,5 @@
 #!/usr/bin/zsh
 
-NUM_UPDATES=$(pacman -Qu | wc -l);
+NUM_UPDATES=$(checkupdates | wc -l);
 [[ $NUM_UPDATES -gt 0 ]] && return 0;
 return 1;

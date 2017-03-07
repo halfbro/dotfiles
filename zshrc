@@ -41,7 +41,7 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-z}={A-Za-z}'
 setopt auto_list
 
 autoload -U colors && colors
-PROMPT="%n@%~ > "
+PROMPT="%n@%M %~ > "
 
 alias vim=nvim
 alias XResUpdate="xrdb -merge ~/.Xresources"

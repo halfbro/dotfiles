@@ -220,7 +220,7 @@ bindsym XF86AudioPrev exec cmus-remote -r
 bindsym XF86AudioPause exec cmus-remote -u
 bindsym XF86AudioStop exec cmus-remote -s
 
-bindsym F10 exec --no-startup-id xwd -root -out screenshot.xwd
+bindsym F10 exec --no-startup-id teiler
 
 # Controls for pausing, next, and previous songs
 bindsym $mod+m exec cmus-remote -u
@@ -236,4 +236,3 @@ smart_borders on
 
 # Enable compton compositor for nice shading and transparency
 exec_always compton --config ~/.config/compton.conf -b
-exec xwinwrap -ov -fs -- mplayer -wid WID ~/summerprismsunset_720p_mpg.mpg -nosound -loop 0 -noconsolecontrols -x 3840 -y 1080

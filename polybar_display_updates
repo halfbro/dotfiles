@@ -1,6 +1,6 @@
 #!/usr/bin/zsh
 
-NUM_UPDATES=$(pacman -Qu | wc -l);
+NUM_UPDATES=$(checkupdates | wc -l);
 [[ $NUM_UPDATES -eq 1 ]] && echo $NUM_UPDATES update available && return 0;
 [[ $NUM_UPDATES -gt 1 ]] && echo $NUM_UPDATES updates available && return 0;
 

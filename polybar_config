@@ -62,7 +62,7 @@ font-2 = Wuncon Siji:size=10
 
 modules-left = i3
 modules-center = 
-modules-right = checkupdates volume filesystem memory cpu wlan eth temperature date
+modules-right = checkupdates volume filesystem memory cpu wlan temperature date
 
 tray-position = right
 tray-padding = 2
@@ -120,7 +120,7 @@ index-sort = false
 wrapping-scroll = true
 
 label-mode-padding = 2
-label-mode-foreground = #000
+label-mode-foreground = ${colors.foreground}
 label-mode-background = ${colors.light-red}
 
 label-focused = %name%
@@ -356,6 +356,6 @@ menu-2-1-exec = menu-open-0
 type = custom/script
 exec = ~/.config/polybar/display_updates.sh
 exec-if = ~/.config/polybar/check_updates.sh
-interval = 20
+interval = 60
 format-underline = ${colors.light-grey}
 format-prefix-foreground = #5b
